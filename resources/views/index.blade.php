@@ -13,18 +13,21 @@
         </head>
     </head>
     <body>
-        <header>
-        
-        </header>
-        <section>
+        <section class="flex">
             <div class="container">
                 <div class="canvas_wrapper">
-                    <canvas id="matrix_canvas" width="1920" height="729" style="width: 1920px; height: 729px;">
+                    <canvas id="matrix_canvas">
+                </div>
+                <div class="welcome flex">
+                    <div class="text">
+                        Hello, I'm <span class="highlight">Joe Dineen</span>.<br>
+                        I'm a full-stack web developer.
+                    </div>
                 </div>
             </div>
         </section>
-        <footer>
+        <nav>
 
-        </footer>
+        </nav>
     </body>
 </html>

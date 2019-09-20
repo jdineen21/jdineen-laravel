@@ -2,6 +2,9 @@
 var canvas = document.getElementById("matrix_canvas");
 var ctx = canvas.getContext("2d");
 
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
 var symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890|!£$%^&*()-=[]{};:#~<>/?";
 
 function getRndInteger(min, max) {
@@ -14,27 +17,74 @@ function getRandSymbol() {
 
 class Snake {
     constructor() {
-        this.snakeLength = getRndInteger(7, 14);
+        this.snakePosition = getRndInteger(-100, 0);
+        this.snakeLength = getRndInteger(25, 46);
+        this._snakeLayer = "";
+        this._snakeLayerTwo = "";
     }
+
+    get snakeLayer() {
+        return this._snakeLayer;
+    }
+
+    set snakeLayer(x) {
+        this._snakeLayer = this._snakeLayer.concat(x);
+        if (this._snakeLayer.length > this.snakeLength) {
+            this._snakeLayer = this._snakeLayer.substring(1, this._snakeLayer.length);
+        }
+
+        this.snakePosition += 1;
+        if (this.snakePosition > 50 + this.snakeLength) {
+            this.snakePosition = getRndInteger(-40, 0);
+        }
+    }
+
+    get snakeLayerTwo() {
+        return this._snakeLayerTwo;
+    }
+
+    set snakeLayerTwo(x) {
+        this._snakeLayerTwo = this._snakeLayerTwo.concat(x);
+        if (this._snakeLayerTwo.length > this.snakeLength) {
+            this._snakeLayerTwo = this._snakeLayerTwo.substring(1, this._snakeLayerTwo.length);
+        }
+    }
+}
+
+var snakeArr = [];
+
+for (i = 0; i < 100; i++) {
+    snakeArr.push(new Snake());
 }
 
 ctx.font = "20px Courier";
 ctx.fillStyle = "#008f11";
 
-var width = "1920";
-var height = "750";
+var width = "2000";
+var height = "1000";
 
-var frequency = 10;
+var frequency = 20;
 var timeout = Math.floor(1000/frequency);
 
 function main() {
-    for (var x = 50; x < 70; x += 20) {
-        for (var y = 15; y < height; y += 20) {
-            ctx.fillText(getRandSymbol(), x, y);
-            ctx.fillText(getRandSymbol(), x, y);
+    for (i = 0; i < 100; i++) {
+        snakeArr[i].snakeLayer = getRandSymbol();
+        snakeArr[i].snakeLayerTwo = getRandSymbol();
+    }
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (var x = 0; x < width; x += 20) {
+        for (var y = 0; y < height; y += 20) {
+            if (Math.floor(y/20) < snakeArr[Math.floor(x/20)].snakePosition) {
+                if (snakeArr[Math.floor(x/20)].snakeLayer[snakeArr[Math.floor(x/20)].snakePosition-Math.floor(y/20)] != undefined) {
+                    ctx.fillText(snakeArr[Math.floor(x/20)].snakeLayer[snakeArr[Math.floor(x/20)].snakePosition-Math.floor(y/20)], x, y);
+                    ctx.fillText(snakeArr[Math.floor(x/20)].snakeLayerTwo[snakeArr[Math.floor(x/20)].snakePosition-Math.floor(y/20)], x, y);
+                }
+            }
         }
     }
-    //setTimeout(timeout, 1000)
+
+    setTimeout(main, timeout);
 }
 
-setTimeout(main, timeout)
+setTimeout(main, timeout);

@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Components
+@import 'matrix';
+
+// General
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $body-bg;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 0;
+    overflow: hidden;
+}

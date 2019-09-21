@@ -1,0 +1,36 @@
+
+.navbar {
+    //display: none;
+    width: 100%;
+    background: rgb(22, 31, 41);
+}
+
+.navbar ul {
+    margin: 0 10%;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    line-height: 4em;
+}
+
+.tab {
+    padding: 0.5em 1em;
+    line-height: 1em;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.05em;
+    transition: color 0.3s;
+    &:hover {
+        color: #008f11;
+        transition: color 0.3s;
+    }
+}
+
+.active {
+    color: #008f11;
+}

@@ -6,6 +6,7 @@
 
 // Components
 @import 'matrix';
+@import 'navbar';
 
 // General
 
@@ -15,14 +16,13 @@
 
 body {
     background: $body-bg;
-    font-family: $font-family-base;
+    font-family: 'Raleway';
     font-size: $font-size-base;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background: #fff;
     padding: 0;
     overflow: hidden;
 }

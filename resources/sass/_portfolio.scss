@@ -1,0 +1,23 @@
+
+.portfolio_section {
+    padding-top: 5em;
+    padding-bottom: 15em;
+    background: #f0f0f0;
+    color: #283237;
+}
+
+.portfolio_container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 15%;
+    width: 70%;
+}
+
+.project {
+    background: red;
+    display: inline-block;
+    flex: 1;
+    width: 33%;
+    height: 30em;
+}

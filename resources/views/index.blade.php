@@ -7,7 +7,7 @@
         <script src="{{asset('js/app.js')}}" defer></script>
         <script src="{{asset('js/matrix.js')}}" defer></script>
         <head>
-            <title>Joe Dineen | Web Developer</title>
+            <title>Joe Dineen</title>
             <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}" type="text/css" />
             <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
             <link rel="shortcut icon" href="css/images/Flash.ico" />
@@ -27,21 +27,64 @@
                 </div>
             </div>
         </section>
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a class="active tab" href="/">Home</a>
-                </li>
-                <li>
-                    <a class="tab" href="/about">About</a>
-                </li>
-                <li>
-                    <a class="tab" href="/portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a class="tab" href="/contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div id="navbar_container"></div>
+        <section class="about_section">
+            <div class="container">
+                <h1 class="section_header">About</h1>
+                <div class="section_header_underline"></div>
+                <div class="keystone_container">
+                    <div class="keystone">
+                        <!-- <img src="" alt="" class="keystone_img"> -->
+                        <h3 class="keystone_header">Fast</h3>
+                        <p class="keystone_description">Rapid page load times and responsive interaction.</p>
+                    </div>
+                    <div class="keystone">
+                        <!-- <img src="" alt="" class="keystone_img"> -->
+                        <h3 class="keystone_header">Responsive</h3>
+                        <p class="keystone_description">Pages are designed to work on a full range of devices.</p>
+                    </div>
+                    <div class="keystone">
+                        <!-- <img src="" alt="" class="keystone_img"> -->
+                        <h3 class="keystone_header">Intuitive</h3>
+                        <p class="keystone_description">An emphasis on easy to use pages, intuitive UX/UI design.</p>
+                    </div>
+                    <div class="keystone">
+                        <!-- <img src="" alt="" class="keystone_img"> -->
+                        <h3 class="keystone_header">Smart</h3>
+                        <p class="keystone_description">Expertise in database design and implemetation for smarter websites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio_section">
+            <div class="container">
+                <h1 class="section_header">Projects</h1>
+                <div class="section_header_underline"></div>
+                <div class="portfolio_container">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact_section">
+            <div class="container">
+                <h1 class="contact_header">Contact</h1>
+                <div class="contact_header_underline"></div>
+                <p class="contact_prompt">Have a question?</p>
+                <form class="contact_form" action="" method="post">
+                    <input class="contact_input" placeholder="Name" type="text" name="name" id="" required>
+                    <input class="contact_input" placeholder="Enter email" type="email" name="email" id="" required>
+                    <textarea placeholder="Your Message" name="message" id="" cols="30" rows="10"></textarea>
+                    <input class="contact_submit" type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="owner">Joe Dineen ©2019</p>
+        </footer>
     </body>
 </html>

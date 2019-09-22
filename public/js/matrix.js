@@ -2,10 +2,10 @@
 var canvas = document.getElementById("matrix_canvas");
 var ctx = canvas.getContext("2d");
 
+var symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890|!£$%^&*()-=[]{};:#~<>/?";
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
-var symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890|!£$%^&*()-=[]{};:#~<>/?";
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
@@ -60,11 +60,19 @@ for (i = 0; i < 100; i++) {
 ctx.font = "20px Courier";
 ctx.fillStyle = "#008f11";
 
-var width = "2000";
-var height = "1000";
+var width = 2000;
+var height = 1000;
 
+var columns = 100;
 var frequency = 20;
 var timeout = Math.floor(1000/frequency);
+var seperation = Math.floor(width/columns);
+
+var timeoutInstance;
+
+window.onresize = function() { 
+    location.reload();
+}
 
 function main() {
     for (i = 0; i < 100; i++) {
@@ -73,12 +81,13 @@ function main() {
     }
     
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var x = 0; x < width; x += 20) {
-        for (var y = 0; y < height; y += 20) {
-            if (Math.floor(y/20) < snakeArr[Math.floor(x/20)].snakePosition) {
-                if (snakeArr[Math.floor(x/20)].snakeLayer[snakeArr[Math.floor(x/20)].snakePosition-Math.floor(y/20)] != undefined) {
-                    ctx.fillText(snakeArr[Math.floor(x/20)].snakeLayer[snakeArr[Math.floor(x/20)].snakePosition-Math.floor(y/20)], x, y);
-                    ctx.fillText(snakeArr[Math.floor(x/20)].snakeLayerTwo[snakeArr[Math.floor(x/20)].snakePosition-Math.floor(y/20)], x, y);
+
+    for (var x = 0; x < width; x += seperation) {
+        for (var y = 0; y < height; y += seperation) {
+            if (Math.floor(y/seperation) < snakeArr[Math.floor(x/seperation)].snakePosition) {
+                if (snakeArr[Math.floor(x/seperation)].snakeLayer[snakeArr[Math.floor(x/seperation)].snakePosition-Math.floor(y/seperation)] != undefined) {
+                    ctx.fillText(snakeArr[Math.floor(x/seperation)].snakeLayer[snakeArr[Math.floor(x/seperation)].snakePosition-Math.floor(y/seperation)], x, y);
+                    ctx.fillText(snakeArr[Math.floor(x/seperation)].snakeLayerTwo[snakeArr[Math.floor(x/seperation)].snakePosition-Math.floor(y/seperation)], x, y);
                 }
             }
         }
@@ -87,4 +96,4 @@ function main() {
     setTimeout(main, timeout);
 }
 
-setTimeout(main, timeout);
+main();

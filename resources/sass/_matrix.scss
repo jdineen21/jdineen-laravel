@@ -39,3 +39,9 @@
 .highlight {
     color: #008f11;
 }
+
+@media(max-width: 1000px) {
+    .text {
+        font-size: 2em;
+    }
+}

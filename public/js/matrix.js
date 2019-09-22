@@ -61,7 +61,7 @@ ctx.font = "20px Courier";
 ctx.fillStyle = "#008f11";
 
 var width = 2000;
-var height = 1000;
+var height = 1500;
 
 var columns = 100;
 var frequency = 20;

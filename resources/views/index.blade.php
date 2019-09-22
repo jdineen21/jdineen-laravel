@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="{{asset('js/app.js')}}" defer></script>
-        <script src="{{asset('js/matrix.js')}}" defer></script>
+        <script src="js/app.js" defer></script>
+        <script src="js/matrix.js" defer></script>
         <head>
             <title>Joe Dineen</title>
-            <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}" type="text/css" />
+            <link rel="stylesheet" href="css/app.css" type="text/css" />
             <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
             <link rel="shortcut icon" href="css/images/Flash.ico" />
         </head>
@@ -32,26 +32,92 @@
             <div class="container">
                 <h1 class="section_header">About</h1>
                 <div class="section_header_underline"></div>
-                <div class="keystone_container">
-                    <div class="keystone">
-                        <!-- <img src="" alt="" class="keystone_img"> -->
-                        <h3 class="keystone_header">Fast</h3>
-                        <p class="keystone_description">Rapid page load times and responsive interaction.</p>
+                <ul class="keystone_container">
+                    <li class="keystone">
+                        <div class="keystone_content">
+                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <h3 class="keystone_header">Fast</h3>
+                            <p class="keystone_description">Rapid page load times and responsive interaction.</p>
+                        </div>
+                    </li>
+                    <li class="keystone">
+                        <div class="keystone_content">
+                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <h3 class="keystone_header">Responsive</h3>
+                            <p class="keystone_description">Pages are designed to work on a full range of devices.</p>
+                        </div>
+                    </li>
+                    <li class="keystone">
+                        <div class="keystone_content">
+                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <h3 class="keystone_header">Intuitive</h3>
+                            <p class="keystone_description">An emphasis on easy to use pages, intuitive UX/UI design.</p>
+                        </div>
+                    </li>
+                    <li class="keystone">
+                        <div class="keystone_content">
+                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <h3 class="keystone_header">Smart</h3>
+                            <p class="keystone_description">Expertise in database design and implemetation for smarter websites.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="summary_container">
+                    <h3 class="summary_header">What I'm about</h3>
+                    <p class="summary_description">
+                        I'm the Front-End Developer for EyeCue Lab in Portland, OR.
+                        I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                        Let's make something special.
+                    </p>
+                </div>
+                <div class="tool_progress_container">
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 90%;">
+                            <div class="tag">HTML</div>
+                        </div>
+                        <span>90%</span>
                     </div>
-                    <div class="keystone">
-                        <!-- <img src="" alt="" class="keystone_img"> -->
-                        <h3 class="keystone_header">Responsive</h3>
-                        <p class="keystone_description">Pages are designed to work on a full range of devices.</p>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 80%;">
+                            <div class="tag">CSS</div>
+                        </div>
+                        <span>80%</span>
                     </div>
-                    <div class="keystone">
-                        <!-- <img src="" alt="" class="keystone_img"> -->
-                        <h3 class="keystone_header">Intuitive</h3>
-                        <p class="keystone_description">An emphasis on easy to use pages, intuitive UX/UI design.</p>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 90%;">
+                            <div class="tag">PHP</div>
+                        </div>
+                        <span>90%</span>
                     </div>
-                    <div class="keystone">
-                        <!-- <img src="" alt="" class="keystone_img"> -->
-                        <h3 class="keystone_header">Smart</h3>
-                        <p class="keystone_description">Expertise in database design and implemetation for smarter websites.</p>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 80%;">
+                            <div class="tag">Laravel</div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 70%;">
+                            <div class="tag">Javascript</div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 80%;">
+                            <div class="tag">React</div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 60%;">
+                            <div class="tag">Node.js</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+                    <div class="tool_progress_bar">
+                        <div class="bar_fill" style="width: 70%;">
+                            <div class="tag">UI Design</div>
+                        </div>
+                        <span>70%</span>
                     </div>
                 </div>
             </div>

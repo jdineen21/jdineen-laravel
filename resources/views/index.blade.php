@@ -14,7 +14,7 @@
         </head>
     </head>
     <body>
-        <section class="matrix_section">
+        <section id="matrix_section">
             <div class="container">
                 <div class="canvas_wrapper">
                     <canvas id="matrix_canvas">
@@ -28,7 +28,7 @@
             </div>
         </section>
         <div id="navbar_container"></div>
-        <section class="about_section">
+        <section id="about_section">
             <div class="container">
                 <h1 class="section_header">About</h1>
                 <div class="section_header_underline"></div>
@@ -65,9 +65,9 @@
                 <div class="summary_container">
                     <h3 class="summary_header">What I'm about</h3>
                     <p class="summary_description">
-                        I'm the Front-End Developer for EyeCue Lab in Portland, OR.
-                        I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-                        Let's make something special.
+                        I'm a Full-Stack Developer based in Sheffield, UK.
+                        I have serious passion making a difference through Web Development creating intuitive, dynamic user experiences.
+                        Let's make something great.
                     </p>
                 </div>
                 <div class="tool_progress_container">
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio_section">
+        <section id="portfolio_section">
             <div class="container">
                 <h1 class="section_header">Projects</h1>
                 <div class="section_header_underline"></div>
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact_section">
+        <section id="contact_section">
             <div class="container">
                 <h1 class="contact_header">Contact</h1>
                 <div class="contact_header_underline"></div>
@@ -149,7 +149,7 @@
                 </form>
             </div>
         </section>
-        <footer class="footer">
+        <footer id="footer">
             <p class="owner">Joe Dineen ©2019</p>
         </footer>
     </body>

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 export default class Navbar extends React.Component {
     constructor(props) {
         super(props);
@@ -20,10 +22,18 @@ export default class Navbar extends React.Component {
         const winScroll =
           document.body.scrollTop || document.documentElement.scrollTop
 
-        if (winScroll > document.getElementsByClassName('matrix_section')[0].clientHeight) {
+        if (winScroll > document.getElementById('matrix_section').clientHeight) {
             this.setState({ setFixed: true, active: 1, })
         } else {
             this.setState({ setFixed: false, active: 0, })
+        }
+
+        if (winScroll > document.getElementById('about_section').clientHeight+document.getElementById('matrix_section').clientHeight) {
+            this.setState({ active: 2 })
+        }
+
+        if (winScroll > document.getElementById('portfolio_section').clientHeight+document.getElementById('about_section').clientHeight+document.getElementById('matrix_section').clientHeight) {
+            this.setState({ active: 3 })
         }
     }
 
@@ -34,16 +44,16 @@ export default class Navbar extends React.Component {
             <nav className={ setFixed ? "navbar fixed": "navbar"} >
                 <ul>
                     <li>
-                        <a className={ (active == 0) ? 'active tab' : 'tab' } href="/">Home</a>
+                        <AnchorLink className={ (active == 0) ? 'active tab' : 'tab' } href="#matrix_section" >Home</AnchorLink>
                     </li>
                     <li>
-                        <a className={ (active == 1) ? 'active tab' : 'tab' } href="/about">About</a>
+                        <AnchorLink className={ (active == 1) ? 'active tab' : 'tab' } href="#about_section" >About</AnchorLink>
                     </li>
                     <li>
-                        <a className={ (active == 2) ? 'active tab' : 'tab' } href="/portfolio">Portfolio</a>
+                        <AnchorLink className={ (active == 2) ? 'active tab' : 'tab' } href="#portfolio_section" >Projects</AnchorLink>
                     </li>
                     <li>
-                        <a className={ (active == 3) ? 'active tab' : 'tab' } href="/contact">Contact</a>
+                        <AnchorLink className={ (active == 3) ? 'active tab' : 'tab' } href="#contact_section" >Contact</AnchorLink>
                     </li>
                 </ul>
             </nav>

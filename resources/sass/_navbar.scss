@@ -25,6 +25,7 @@
 }
 
 .navbar ul li {
+    margin-right: 0.2em;
     display: inline-block;
     line-height: 4em;
 }
@@ -35,6 +36,7 @@
     font-size: 1.3em;
     font-weight: 600;
     color: #ffffff;
+    cursor: pointer;
     text-decoration: none;
     border-radius: 0.05em;
     transition: color 0.3s;

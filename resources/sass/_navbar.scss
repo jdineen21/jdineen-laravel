@@ -18,14 +18,14 @@
 }
 
 .navbar ul {
-    margin: 0 10%;
+    margin-left: 5%;
     padding: 0;
     list-style-type: none;
     transition: margin 0.3s;
 }
 
 .navbar ul li {
-    margin-right: 0.2em;
+    margin-right: 0.1em;
     display: inline-block;
     line-height: 4em;
 }
@@ -51,6 +51,6 @@
 
 @media(max-width: 570px) {
     .navbar ul {
-        margin: 0 1%;
+        margin: 0;
     }
 }

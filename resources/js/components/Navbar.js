@@ -32,7 +32,7 @@ export default class Navbar extends React.Component {
             this.setState({ active: 2 })
         }
 
-        if (winScroll > document.getElementById('portfolio_section').clientHeight+document.getElementById('about_section').clientHeight+document.getElementById('matrix_section').clientHeight) {
+        if (winScroll > document.getElementById('svg_section').clientHeight+document.getElementById('portfolio_section').clientHeight+document.getElementById('about_section').clientHeight+document.getElementById('matrix_section').clientHeight) {
             this.setState({ active: 3 })
         }
     }

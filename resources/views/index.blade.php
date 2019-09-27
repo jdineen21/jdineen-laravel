@@ -32,7 +32,7 @@
                 <img src="assets/portfolio/fforflash.png" alt="" class="modal_img">
                 <div class="modal_info" style="background: #ffffff;">
                     <h4>F For Flash</h4>
-                    <p>Some other text in the Modal..</p>
+                    <p>A personal project that aims to take game data from Leauge of Legends, process this data and then provide players with the most up to date strategy. This project is written in PHP and React.</p>
                 </div> 
             </div>
         </div>

@@ -14,3 +14,4 @@ require('./bootstrap');
 
 require('./components/Navbar');
 require('./components/ViewWork');
+require('./components/ReturnTop');

@@ -130,10 +130,6 @@
                 <div class="portfolio_container">
                     <div class="project"></div>
                     <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
                 </div>
             </div>
         </section>
@@ -156,6 +152,9 @@
             </div>
         </section>
         <footer id="footer">
+            <div id="return_top">
+                
+            </div>
             <p class="owner">Joe Dineen ©2019</p>
         </footer>
     </body>

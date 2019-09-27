@@ -67,7 +67,7 @@
                     <h3 class="summary_header">What I'm about</h3>
                     <p class="summary_description">
                         I'm a Full-Stack Developer based in Sheffield, UK.
-                        I have serious passion making a difference through Web Development creating intuitive, dynamic user experiences.
+                        I have a serious passion for making a difference through Web Development and creating intuitive, dynamic user experiences.
                         Let's make something great.
                     </p>
                 </div>

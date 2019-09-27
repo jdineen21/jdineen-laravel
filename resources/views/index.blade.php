@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="js/app.js" defer></script>
         <script src="js/matrix.js" defer></script>
+        <script src="js/modal.js" defer></script>
         <head>
             <title>Joe Dineen</title>
             <link rel="stylesheet" href="css/app.css" type="text/css" />
@@ -14,6 +15,27 @@
         </head>
     </head>
     <body>
+        <div class="modals">
+            <div class="modal_content">
+                <span class="close">&times;</span>
+                <img src="assets/portfolio/curious-monkey.png" alt="" class="modal_img">
+                <div class="modal_info">
+                    <h4>Curious Monkey</h4>
+                    <p>A work proposal for a Drama company based in Newcastle. Though it is only currently the home page it features full responsive deisgn. Written in PHP and React.</p>
+                    <a href="/curious-monkey" class="visit_button">Visit Page</a>
+                </div> 
+            </div>
+        </div>
+        <div class="modals">
+            <div class="modal_content" style="background: #262626;">
+            <span class="close">&times;</span>
+                <img src="assets/portfolio/fforflash.png" alt="" class="modal_img">
+                <div class="modal_info" style="background: #ffffff;">
+                    <h4>F For Flash</h4>
+                    <p>Some other text in the Modal..</p>
+                </div> 
+            </div>
+        </div>
         <section id="matrix_section">
             <div class="container">
                 <div class="canvas_wrapper">
@@ -127,9 +149,25 @@
             <div class="container">
                 <h1 class="section_header">Projects</h1>
                 <div class="section_header_underline"></div>
-                <div class="portfolio_container">
-                    <div class="project"></div>
-                    <div class="project"></div>
+                <div id="portfolio_container">
+                    <div class="project">
+                        <div class="project_img">
+                            <img src="assets/portfolio/curious-monkey.png" alt="">
+                        </div>
+                        <div class="project_hover">
+                            <h4 class="project_header">Curious Monkey</h4>
+                            <div class="project_button">LEARN MORE</div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_img">
+                            <img src="assets/portfolio/fforflash.png" alt="" class="project_img">
+                        </div>
+                        <div class="project_hover">
+                            <h4 class="project_header">F For Flash</h4>
+                            <div class="project_button">LEARN MORE</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

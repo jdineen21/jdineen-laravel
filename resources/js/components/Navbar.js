@@ -41,8 +41,8 @@ export default class Navbar extends React.Component {
         const { setFixed, active } = this.state;
 
         return (
-            <nav className={ setFixed ? "navbar fixed": "navbar"} >
-                <ul>
+            <nav className={ setFixed ? 'navbar fixed': 'navbar'} >
+                <ul className='navbar_ul'>
                     <li>
                         <AnchorLink className={ (active == 0) ? 'active tab' : 'tab' } href="#matrix_section" >Home</AnchorLink>
                     </li>

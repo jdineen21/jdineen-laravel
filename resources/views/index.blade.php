@@ -27,10 +27,10 @@
             </div>
         </div>
         <div class="modals">
-            <div class="modal_content" style="background: #262626;">
+            <div class="modal_content">
             <span class="close">&times;</span>
                 <img src="assets/portfolio/fforflash.png" alt="" class="modal_img">
-                <div class="modal_info" style="background: #ffffff;">
+                <div class="modal_info">
                     <h4>F For Flash</h4>
                     <p>A personal project that aims to take game data from Leauge of Legends, process this data and then provide players with the most up to date strategy. This project is written in PHP and React.</p>
                 </div> 
@@ -181,7 +181,8 @@
                 <h1 class="contact_header">Contact</h1>
                 <div class="contact_header_underline"></div>
                 <p class="contact_prompt">Have a question?</p>
-                <form class="contact_form" action="" method="post">
+                <form class="contact_form" method="post">
+                    {{ csrf_field() }}
                     <input class="contact_input" placeholder="Name" type="text" name="name" id="" required>
                     <input class="contact_input" placeholder="Enter email" type="email" name="email" id="" required>
                     <textarea placeholder="Your Message" name="message" id="" cols="30" rows="10"></textarea>

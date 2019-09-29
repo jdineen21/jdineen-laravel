@@ -61,21 +61,27 @@
 
 .tool_progress_bar {
     margin: 0 0 1em 0;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline-block;
+    // display: -webkit-inline-flex;
+    // display: -ms-inline-flexbox;
+    // display: inline-flex;
     width: 100%;
     background: #f0f0f0;
+    border-radius: 2em;
 }
 
-.tool_progress_bar span {
+.tool_progress_bar .bar_percent {
     padding: 0.8em 1.3em;
-    position: relative;
+    padding-left: 0;
+    float: right;
+    border-radius: 2em;
 }
 
 .tool_progress_bar .bar_fill {
     height: 100%;
+    float: left;
     background: rgb(39, 54, 73);
+    border-radius: 2em;
 }
 
 .tool_progress_bar .bar_fill .tag {
@@ -86,6 +92,7 @@
     color: #ffffff;
     font-weight: 900;
     background: rgb(27, 38, 51);
+    border-radius: 2em;
 }
 
 @media(max-width: 1300px) {

@@ -95,52 +95,52 @@
                 </div>
                 <div class="tool_progress_container">
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 90%;">
+                        <div class="bar_fill" style="width: 85%;">
                             <div class="tag">HTML</div>
                         </div>
-                        <span>90%</span>
+                        <div class="bar_percent">90%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 80%;">
+                        <div class="bar_fill" style="width: 75%;">
                             <div class="tag">CSS</div>
                         </div>
-                        <span>80%</span>
+                        <div class="bar_percent">80%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 90%;">
+                        <div class="bar_fill" style="width: 85%;">
                             <div class="tag">PHP</div>
                         </div>
-                        <span>90%</span>
+                        <div class="bar_percent">90%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 80%;">
+                        <div class="bar_fill" style="width: 75%;">
                             <div class="tag">Laravel</div>
                         </div>
-                        <span>80%</span>
+                        <div class="bar_percent">80%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 70%;">
+                        <div class="bar_fill" style="width: 65%;">
                             <div class="tag">Javascript</div>
                         </div>
-                        <span>70%</span>
+                        <div class="bar_percent">70%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 80%;">
+                        <div class="bar_fill" style="width: 75%;">
                             <div class="tag">React</div>
                         </div>
-                        <span>80%</span>
+                        <div class="bar_percent">80%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 60%;">
+                        <div class="bar_fill" style="width: 55%;">
                             <div class="tag">Node.js</div>
                         </div>
-                        <span>60%</span>
+                        <div class="bar_percent">60%</div>
                     </div>
                     <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 70%;">
+                        <div class="bar_fill" style="width: 65%;">
                             <div class="tag">UI Design</div>
                         </div>
-                        <span>70%</span>
+                        <div class="bar_percent">70%</div>
                     </div>
                 </div>
             </div>

@@ -15,13 +15,7 @@ class IndexController extends Controller
     }
 
     public function send(Request $request) {
-        // $contact = new Contact;
-
-        // $contact->name = request('name');
-        // $contact->email = request('email');
-        // $contact->message = request('message');
-
-        // $contact->save();
+        
         Mail::send(new ContactMail($request));
         
         return view('confirm-sent/index');

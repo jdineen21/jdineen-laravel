@@ -183,7 +183,7 @@
                 <h1 class="contact_header">Contact</h1>
                 <div class="contact_header_underline"></div>
                 <p class="contact_prompt">Have a question?</p>
-                <form class="contact_form" method="post">
+                <form class="contact_form" name="contact_form" action="confirm-sent/" method="post">
                     {{ csrf_field() }}
                     <input class="contact_input" placeholder="Name" type="text" name="name" id="" required>
                     <input class="contact_input" placeholder="Enter email" type="email" name="email" id="" required>

@@ -13,4 +13,4 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::post('/', 'IndexController@store');
+Route::post('/confirm-sent', 'IndexController@send');

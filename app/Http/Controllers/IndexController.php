@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Contact;
+use Illuminate\Support\Facades\Mail;
+
+use App\Mail\ContactMail;
 
 class IndexController extends Controller
 {
@@ -12,14 +14,16 @@ class IndexController extends Controller
         return view('index');
     }
 
-    public function store() {
-        $contact = new Contact;
+    public function send(Request $request) {
+        // $contact = new Contact;
 
-        $contact->name = request('name');
-        $contact->email = request('email');
-        $contact->message = request('message');
+        // $contact->name = request('name');
+        // $contact->email = request('email');
+        // $contact->message = request('message');
 
-        $contact->save();
-        return view('index');
+        // $contact->save();
+        Mail::send(new ContactMail($request));
+        
+        return view('confirm-sent/index');
     }
 }

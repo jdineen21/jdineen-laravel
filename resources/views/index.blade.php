@@ -183,7 +183,7 @@
                 <h1 class="contact_header">Contact</h1>
                 <div class="contact_header_underline"></div>
                 @if(isset($sent))
-                <p class="contact_prompt">Thanks you! Your message has been sent.</p>
+                <p class="contact_prompt">Thank you! Your message has been sent.</p>
                 @else
                 <p class="contact_prompt">Have a question?</p>
                 <form class="contact_form" id="contact_form" name="contact_form" action="/#contact_section" method="post">

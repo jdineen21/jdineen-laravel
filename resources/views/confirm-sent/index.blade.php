@@ -7,6 +7,9 @@
     <title>Thanks for your message</title>
 </head>
 <body>
-    
+    <h1>
+        Thanks for your message.<br>
+        I will reply as soon as possible.
+    </h1>
 </body>
 </html>

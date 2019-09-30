@@ -17,7 +17,9 @@ class IndexController extends Controller
     public function send(Request $request) {
         
         Mail::send(new ContactMail($request));
+
+        $sent = True;
         
-        return view('confirm-sent/index');
+        return view('index', compact('sent'));
     }
 }

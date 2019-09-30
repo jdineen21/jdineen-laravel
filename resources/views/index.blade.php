@@ -182,20 +182,22 @@
             <div class="container">
                 <h1 class="contact_header">Contact</h1>
                 <div class="contact_header_underline"></div>
+                @if(isset($sent))
+                <p class="contact_prompt">Thanks your message has been sent.</p>
+                @else
                 <p class="contact_prompt">Have a question?</p>
-                <form class="contact_form" name="contact_form" action="confirm-sent/" method="post">
+                <form class="contact_form" id="contact_form" name="contact_form" action="/#contact_section" method="post">
                     {{ csrf_field() }}
                     <input class="contact_input" placeholder="Name" type="text" name="name" id="" required>
                     <input class="contact_input" placeholder="Enter email" type="email" name="email" id="" required>
                     <textarea placeholder="Your Message" name="message" id="" cols="30" rows="10"></textarea>
                     <input class="contact_submit" type="submit" value="SUBMIT">
                 </form>
+                @endif
             </div>
         </section>
         <footer id="footer">
-            <div id="return_top">
-                
-            </div>
+            <div id="return_top"></div>
             <p class="owner">Joe Dineen ©2019</p>
         </footer>
     </body>

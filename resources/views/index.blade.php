@@ -58,89 +58,91 @@
                 <ul class="keystone_container">
                     <li class="keystone">
                         <div class="keystone_content">
-                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <img src="assets/icons/icon-fast.png" alt="" class="keystone_img">
                             <h3 class="keystone_header">Fast</h3>
                             <p class="keystone_description">Rapid page load times and responsive interaction.</p>
                         </div>
                     </li>
                     <li class="keystone">
                         <div class="keystone_content">
-                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <img src="assets/icons/icon-responsive.png" alt="" class="keystone_img">
                             <h3 class="keystone_header">Responsive</h3>
                             <p class="keystone_description">Pages are designed to work on a full range of devices.</p>
                         </div>
                     </li>
                     <li class="keystone">
                         <div class="keystone_content">
-                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <img src="assets/icons/icon-intuitive.png" alt="" class="keystone_img">
                             <h3 class="keystone_header">Intuitive</h3>
                             <p class="keystone_description">An emphasis on easy to use pages, intuitive UX/UI design.</p>
                         </div>
                     </li>
                     <li class="keystone">
                         <div class="keystone_content">
-                            <!-- <img src="" alt="" class="keystone_img"> -->
+                            <img src="assets/icons/icon-smart.png" alt="" class="keystone_img">
                             <h3 class="keystone_header">Smart</h3>
                             <p class="keystone_description">Expertise in database design and implemetation for smarter websites.</p>
                         </div>
                     </li>
                 </ul>
-                <div class="summary_container">
-                    <h3 class="summary_header">What I'm about</h3>
-                    <p class="summary_description">
-                        I'm a Full-Stack Developer based in Sheffield, UK.
-                        I have a serious passion for making a difference through Web Development and creating intuitive, dynamic user experiences.
-                        Let's make something great.
-                    </p>
-                </div>
-                <div class="tool_progress_container">
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 85%;">
-                            <div class="tag">HTML</div>
-                        </div>
-                        <div class="bar_percent">90%</div>
+                <div class="about_bottom">
+                    <div class="summary_container">
+                        <h3 class="summary_header">What I'm about</h3>
+                        <p class="summary_description">
+                            I'm a Full-Stack Developer based in Sheffield, UK.
+                            I have a serious passion for making a difference through Web Development and creating intuitive, dynamic user experiences.
+                            Let's make something great.
+                        </p>
                     </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 75%;">
-                            <div class="tag">CSS</div>
+                    <div class="tool_progress_container">
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 85%;">
+                                <div class="tag">HTML</div>
+                            </div>
+                            <div class="bar_percent">90%</div>
                         </div>
-                        <div class="bar_percent">80%</div>
-                    </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 85%;">
-                            <div class="tag">PHP</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 75%;">
+                                <div class="tag">CSS</div>
+                            </div>
+                            <div class="bar_percent">80%</div>
                         </div>
-                        <div class="bar_percent">90%</div>
-                    </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 75%;">
-                            <div class="tag">Laravel</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 85%;">
+                                <div class="tag">PHP</div>
+                            </div>
+                            <div class="bar_percent">90%</div>
                         </div>
-                        <div class="bar_percent">80%</div>
-                    </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 65%;">
-                            <div class="tag">Javascript</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 75%;">
+                                <div class="tag">Laravel</div>
+                            </div>
+                            <div class="bar_percent">80%</div>
                         </div>
-                        <div class="bar_percent">70%</div>
-                    </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 75%;">
-                            <div class="tag">React</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 65%;">
+                                <div class="tag">Javascript</div>
+                            </div>
+                            <div class="bar_percent">70%</div>
                         </div>
-                        <div class="bar_percent">80%</div>
-                    </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 55%;">
-                            <div class="tag">Node.js</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 75%;">
+                                <div class="tag">React</div>
+                            </div>
+                            <div class="bar_percent">80%</div>
                         </div>
-                        <div class="bar_percent">60%</div>
-                    </div>
-                    <div class="tool_progress_bar">
-                        <div class="bar_fill" style="width: 65%;">
-                            <div class="tag">UI Design</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 55%;">
+                                <div class="tag">Node.js</div>
+                            </div>
+                            <div class="bar_percent">60%</div>
                         </div>
-                        <div class="bar_percent">70%</div>
+                        <div class="tool_progress_bar">
+                            <div class="bar_fill" style="width: 65%;">
+                                <div class="tag">UI Design</div>
+                            </div>
+                            <div class="bar_percent">70%</div>
+                        </div>
                     </div>
                 </div>
             </div>

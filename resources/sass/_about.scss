@@ -29,23 +29,27 @@
 
 .keystone_content {
     padding: 0 3em;
+    text-align: center;
 }
 
 .keystone_header {
-    text-align: center;
     font-weight: 900;
     font-size: 2em;
 }
 
-.keystone_description {
-    text-align: center;
+.about_bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .summary_container {
     margin: 0 0 0 20%;
-    display: inline-block;
+    display: flex;
     width: 27.5%;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .summary_header {
@@ -62,9 +66,6 @@
 .tool_progress_bar {
     margin: 0 0 1em 0;
     display: inline-block;
-    // display: -webkit-inline-flex;
-    // display: -ms-inline-flexbox;
-    // display: inline-flex;
     width: 100%;
     background: #f0f0f0;
     border-radius: 2em;
@@ -96,6 +97,10 @@
 }
 
 @media(max-width: 1300px) {
+    .about_bottom {
+        display: block;
+    }
+
     .summary_container {
         margin: 0 25%;
         margin-bottom: 6em;

@@ -4,6 +4,9 @@ var ctx = canvas.getContext("2d");
 
 var symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890|!£$%^&*()-=[]{};:#~<>/?";
 
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
@@ -54,6 +57,9 @@ for (i = 0; i < 100; i++) {
     snakeArr.push(new Snake());
 }
 
+ctx.font = "20px Courier";
+ctx.fillStyle = "#008f11";
+
 var width = 2000;
 var height = 1500;
 
@@ -64,13 +70,11 @@ var seperation = Math.floor(width/columns);
 
 var timeoutInstance;
 
-function redraw() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+window.onresize = function() { 
+    location.reload();
+}
 
-    ctx.font = "20px Courier";
-    ctx.fillStyle = "#008f11";
-
+function main() {
     for (i = 0; i < 100; i++) {
         snakeArr[i].snakeLayer = getRandSymbol();
         snakeArr[i].snakeLayerTwo = getRandSymbol();
@@ -89,7 +93,7 @@ function redraw() {
         }
     }
 
-    setTimeout(redraw, timeout);
+    setTimeout(main, timeout);
 }
 
-redraw();
+main();

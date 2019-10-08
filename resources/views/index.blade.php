@@ -22,7 +22,7 @@
                 <img src="assets/portfolio/curious-monkey.png" alt="" class="modal_img">
                 <div class="modal_info">
                     <h4>Curious Monkey</h4>
-                    <p>A work proposal for a Drama company based in Newcastle. Though it is only currently the home page it features full responsive deisgn. Written in PHP and React.</p>
+                    <p>A work proposal for a drama company based in Newcastle. Though it is only currently the home page it features full responsive design. Written in PHP and React.</p>
                     <a href="/curious-monkey" class="visit_button">Visit Page</a>
                 </div> 
             </div>
